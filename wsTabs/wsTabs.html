@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tabs demo</title>
+  <link href="wsTabs.css" rel="stylesheet">
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+    <li><a href="#tabs-3">Tab 3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>This is tab 1</p>
+  </div>
+  <div id="tabs-2">
+    <p>This is tab 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>This is tab 3</p>
+    <p>For Fun</p>
+  </div>
+</div>
+<script src="../libs/jquery-2.1.1.js"></script>
+<script src="wsTabs.js"></script>
+<script>
+    $(document).ready(function(){
+    	$("#tabs").wsTabs({
+    		active: 1
+    	});
+    });
+</script>
+</body>
+</html>
